@@ -1,3 +1,21 @@
+prop flow from home page to chil componenets
+URL (?category=shoes)
+        │
+        ▼
+   Homepage
+   (reads searchParams)
+        │
+        │  category
+        ▼
+   ProductList
+   (maps products)
+        │
+        │  product
+        ▼
+   ProductCard
+   (local state: size, color)
+
+---
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

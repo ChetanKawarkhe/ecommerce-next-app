@@ -24,7 +24,7 @@ const ProductCard = ({product}:{product:ProductType}) => { //take product from p
       <Link href={`/products/${product.id}`}>
         <div className="relative aspect-[2/3]">
           <Image
-            src={product.images[productTypes.color]}
+            src={product.images[productTypes.color]}  //! 59:46 
             alt={product.name}
             fill
             className="object-cover hover:scale-105 transition-all duration-300 "
@@ -48,7 +48,7 @@ const ProductCard = ({product}:{product:ProductType}) => { //take product from p
               })}
             >
               {product.sizes.map((size) => {
-                return <option value={size}>{size.toUpperCase()}</option>;
+                return <option key={size} value={size}>{size.toUpperCase()}</option>;
               })}
             </select>
           </div>
