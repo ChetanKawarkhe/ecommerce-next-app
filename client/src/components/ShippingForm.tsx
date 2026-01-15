@@ -57,7 +57,7 @@ const ShippingForm = ({
           {...register("email")}
         />
 
-        {errors.name && (
+        {errors.email && (
           <p className="text-xs text-red-500">{errors.email.message}</p>
         )}
       </div>
@@ -73,7 +73,7 @@ const ShippingForm = ({
           {...register("phone")}
         />
 
-        {errors.name && (
+        {errors.phone && (
           <p className="text-xs text-red-500">{errors.phone.message}</p>
         )}
       </div>
@@ -89,7 +89,7 @@ const ShippingForm = ({
           {...register("address")}
         />
 
-        {errors.name && (
+        {errors.address && (
           <p className="text-xs text-red-500">{errors.address.message}</p>
         )}
       </div>
@@ -105,7 +105,7 @@ const ShippingForm = ({
           {...register("city")}
         />
 
-        {errors.name && (
+        {errors.city && (
           <p className="text-xs text-red-500">{errors.city.message}</p>
         )}
       </div>
