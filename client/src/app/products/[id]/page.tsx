@@ -19,9 +19,17 @@ const product:ProductType={
     purple: "/products/1p.png",
     green: "/products/1gr.png",
   },
+};
+
+export const generateMetadata = async ({params,}:{params:{id:string};})=>{
+  return {
+    title:product.name,
+    describe:product.description,
+  }
 }
 
 import React from 'react'
+import { string } from 'zod';
 
 const ProductPage = async({params,searchParams}:{params:Promise<{id:string}>;searchParams:Promise<{color:string; size:string}>}) => {
 
